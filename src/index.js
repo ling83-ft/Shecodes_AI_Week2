@@ -21,6 +21,7 @@ function generateCookBook(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");
+  recipeElement.style.display = "block";
   recipeElement.innerHTML = "Generating recipe.. please wait";
   axios.get(apiUrl).then(displayRecipe);
 }
