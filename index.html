@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Cook Book Generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>AI Cook Book Generator</h1>
       </header>
       <main>
-        <form action="">
+        <form id="cook-book-generator">
           <input
             type="text"
             placeholder="Enter the food you want to make"
@@ -25,11 +26,7 @@
           />
           <input type="submit" value="Submit" class="submit-button" />
         </form>
-        <div class="recipe">
-          The recipe will go here
-          <br />
-          The recipe will go here
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         The AI project was cooded by Feiling and is
